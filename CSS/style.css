@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "home";
+  src: url("../FONTE/UnicaOne-Regular.ttf");
+}
+:root {
+  --cor1: #ffffff;
+  --cor2: #000000;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 100%;
+  height: 100vh;
+}
+section {
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+/* flex  center center*/
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  cursor: pointer;
+  max-width: 500px;
+  min-width: 500px;
+}
+
+.black {
+  background-color: var(--cor2);
+}
+.white {
+  background: var(--cor1);
+}
+
+/* h3 */
+h3 {
+  color: var(--cor1);
+  background-color: transparent;
+  font-family: "home";
+  font-weight: normal;
+  font-size: 2em;
+}
+h2 {
+  color: var(--cor2);
+  background-color: transparent;
+  font-family: "home";
+  font-weight: normal;
+  font-size: 2em;
+}
+button {
+  font-family: "home";
+}
+
+/* ANIMA */
+.slide-in-left {
+  -webkit-animation: slide-in-left 0.5s ease-in-out 2s both;
+  animation: slide-in-left 0.5s ease-in-out 2s both;
+}
