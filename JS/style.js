@@ -1,8 +1,15 @@
+window.onload = function() {
+  anima(param1, param2);
+};
+
+
 /* to change stlye  */
 var imgWhite = document.getElementById('imgWhite');
 var body = document.getElementById('all');
+var botaoAcesso = document.getElementById('acesso');
 
 imgWhite.onclick = acessou;
+botaoAcesso.onclick = redirect
 
 
 function acessou() {
@@ -21,4 +28,6 @@ function acessou() {
     }
   }
 }
-  
+function redirect() {
+  window.location.pathname = "../quem-eu-sou.html"
+}

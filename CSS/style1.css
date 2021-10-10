@@ -68,9 +68,6 @@ button {
   font-size: 1em;
   margin: 15px 0 0 0;
 }
-.mid {
-  margin-top: 20vh;
-}
 p {
   font-family: "home";
   color: var(--cor1);
