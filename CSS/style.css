@@ -2,6 +2,10 @@
   font-family: "home";
   src: url("../FONTE/UnicaOne-Regular.ttf");
 }
+@font-face {
+  font-family: "megrim";
+  src: url("../FONTE/LOGO FONT/Megrim-Regular.ttf");
+}
 :root {
   --cor1: #ffffff;
   --cor2: #000000;
@@ -10,10 +14,30 @@
 * {
   margin: 0;
   padding: 0;
+  cursor: none;
+  overflow: hidden;
+  font-family: "home";
+}
+body::-webkit-scrollbar {
+  display: none;
+  background-color: transparent;
 }
 body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
   max-width: 100%;
   height: 100vh;
+}
+.cursorTRI {
+  width: 20px;
+  height: 20px;
+  display: block;
+  /* border-radius: 50%; */
+  position: absolute;
+  background: var(--cor3);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotate(-45deg);
+  color: var(--cor3);
 }
 section {
   flex-wrap: nowrap;
@@ -32,7 +56,6 @@ section {
 }
 
 img {
-  cursor: pointer;
   max-width: 500px;
   min-width: 500px;
 }
@@ -61,12 +84,23 @@ h2 {
   font-size: 2em;
 }
 button {
-  font-family: "home";
+  font-family: "megrim";
+  font-weight: 1000;
   border: 1px solid var(--cor2);
   background-color: transparent;
   padding: 0.3em;
   font-size: 1em;
   margin: 15px 0 0 0;
+  transition: 0.3s;
+  transition-timing-function: ease;
+}
+button:hover {
+  background-color: var(--cor2);
+  color: var(--cor1);
+}
+button:active {
+  background-color: var(--cor2);
+  color: var(--cor3);
 }
 .mid {
   margin-top: 20vh;
