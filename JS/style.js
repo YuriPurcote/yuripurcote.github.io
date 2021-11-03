@@ -18,7 +18,7 @@ function acessou() {
     body        .classList.add('white');
     imgWhite    .classList.add('white') ;
     imgWhite    .classList.remove('black');
-    imgWhite              .setAttribute('src','../img/LOGO YU - para site.png')
+    imgWhite.setAttribute('src','../img/LOGO YU - para site.png')
     
   }else{
     if(imgWhite.classList.contains('white')){
@@ -33,7 +33,7 @@ function acessou() {
 
 function redirect() {
   setTimeout(function(){ 
-    window.location.pathname = "quem-eu-sou.html"
+    window.location.pathname = "quem-eu-sou"
   }, 500); 
 }
 
