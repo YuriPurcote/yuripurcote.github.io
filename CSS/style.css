@@ -1,115 +1,20 @@
 @font-face {
-  font-family: "home";
-  src: url("../FONTE/UnicaOne-Regular.ttf");
+    font-family: "kid";
+    src: url("../fonte/PatrickHand-Regular.ttf");
 }
-@font-face {
-  font-family: "megrim";
-  src: url("../FONTE/LOGO FONT/Megrim-Regular.ttf");
+.kid{
+    font-family: "kid";
 }
-:root {
-  --cor1: #ffffff;
-  --cor2: #000000;
-  --cor3: #ff2521;
+.orange{
+    background-color: #F2994B;
 }
-* {
-  margin: 0;
-  padding: 0;
-  cursor: none;
-  overflow: hidden;
-  font-family: "home";
+.font-light{
+    color: #fff;
 }
-body::-webkit-scrollbar {
-  display: none;
-  background-color: transparent;
+.size-ps-1{
+    font-size:4rem;
 }
-body {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-  max-width: 100%;
-  height: 100vh;
-}
-.cursorTRI {
-  width: 20px;
-  height: 20px;
-  display: block;
-  /* border-radius: 50%; */
-  position: absolute;
-  background: var(--cor3);
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  transform: rotate(-45deg);
-  color: var(--cor3);
-}
-section {
-  flex-wrap: nowrap;
-}
-/* flex  center center*/
-.flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.flex-row {
-  flex-direction: row;
-}
-.flex-column {
-  flex-direction: column;
-}
-
-img {
-  max-width: 500px;
-  min-width: 500px;
-}
-
-.black {
-  background-color: var(--cor2);
-}
-.white {
-  background: var(--cor1);
-}
-
-/* h3 */
-h3 {
-  color: var(--cor1);
-  background-color: transparent;
-  font-family: "home";
-  font-weight: normal;
-  font-size: 2em;
-  border-bottom: 1px solid var(--cor1);
-}
-h2 {
-  color: var(--cor2);
-  background-color: transparent;
-  font-family: "home";
-  font-weight: normal;
-  font-size: 2em;
-}
-button {
-  font-family: "megrim";
-  font-weight: 1000;
-  border: 1px solid var(--cor2);
-  background-color: transparent;
-  padding: 0.3em;
-  font-size: 1em;
-  margin: 15px 0 0 0;
-  transition: 0.3s;
-  transition-timing-function: ease;
-}
-button:hover {
-  background-color: var(--cor2);
-  color: var(--cor1);
-}
-button:active {
-  background-color: var(--cor2);
-  color: var(--cor3);
-}
-.mid {
-  margin-top: 20vh;
-}
-p {
-  font-family: "home";
-  color: var(--cor1);
-}
-span {
-  font-family: "home";
-  color: var(--cor3);
+section{
+    margin-bottom: 5rem;
+    margin-top: 1rem;
 }
